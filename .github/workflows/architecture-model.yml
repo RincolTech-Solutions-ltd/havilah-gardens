@@ -1,0 +1,33 @@
+name: Architecture model
+
+# Validate the Structurizr C4 model on every change to docs/. The CLI version is pinned:
+# structurizr/cli:latest is a no-op stub that exits 0 without validating anything.
+#
+# The runner comes from the repository variable CI_RUNS_ON (ADR-002), so moving to Rincol's
+# self-hosted runners when the repository goes private is a variable change only.
+
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**"]
+  pull_request:
+    paths: ["docs/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  STRUCTURIZR_CLI: structurizr/cli:2024.09.19
+
+jobs:
+  model:
+    runs-on: ${{ fromJSON(vars.CI_RUNS_ON || '"ubuntu-latest"') }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate the workspace
+        run: |
+          docker run --rm --user 0:0 -v "$PWD/docs:/work" -w /work "$STRUCTURIZR_CLI" \
+            validate -workspace workspace.dsl
