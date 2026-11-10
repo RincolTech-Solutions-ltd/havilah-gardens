@@ -1,10 +1,10 @@
 # ADR-003: Phase 1 is a static catalogue site with orders through WhatsApp
 
-## Status: Proposed
+## Status: Accepted (10 Nov 2026)
 
 ## Context
 Havilah Gardens has no online demand data yet and a small team. A full shop (accounts, basket, payments, stock) costs
-time to build and run, and payment methods depend on which market comes first, which is not decided. Customers in our
+time to build and run, and the first market is Uganda, where mobile money needs a payment provider to be set up first. Customers in our
 markets already buy from small businesses through WhatsApp.
 
 ## Decision
@@ -15,7 +15,7 @@ customer accounts.
 
 Built with Astro and hosted on Cloudflare Pages (free tier), with a preview link for each pull request so Esther can
 see changes before they go live. Online payment, a basket and order tracking are phase 2, decided in a later ADR once
-phase 1 shows demand and the first market is known.
+phase 1 shows demand.
 
 ## Consequences
 - Better: live in days, almost nothing to run or secure, very fast on phones, good for search.
