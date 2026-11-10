@@ -2,6 +2,9 @@
 
 Status: draft, 10 Nov 2026. Esther and Hillary refine it as ideas come in.
 
+**First market: Uganda** (decided 10 Nov 2026). Prices are in UGX, payment is mobile money first, and delivery
+starts in Kampala.
+
 ## What Havilah Gardens is
 
 A small business that makes and sells **planters, pots and flowers**. Esther leads the products: the designs, the
@@ -27,7 +30,7 @@ Phase 1, market and take orders:
 
 Phase 2, sell online (only once phase 1 shows real demand):
 
-5. A basket and online payment (mobile money and card).
+5. A basket and online payment (MTN and Airtel mobile money first, then card).
 6. Delivery areas and fees.
 7. Order tracking for Esther: what is ordered, paid, made and delivered.
 
@@ -35,8 +38,8 @@ Phase 2, sell online (only once phase 1 shows real demand):
 
 These are open decisions, tracked in Hillary's project notes:
 
-- Which market comes first, and so which currency, payment methods and delivery areas.
-- The domain name.
+- The domain name (havilahgardens.com is taken).
+- Delivery areas and fees beyond Kampala.
 - The first product list, with photos and selling prices (from Esther).
 - Brand basics: logo, colours, tone of voice.
 - Who answers the WhatsApp orders, and on which number.
