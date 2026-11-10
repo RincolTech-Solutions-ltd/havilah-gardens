@@ -18,6 +18,5 @@ its own ADR before it is built.
 ### Constraints
 
 - First market is Uganda: prices in UGX with no decimals.
-
 - Public repository until Hillary decides to make it private; no private data in it (ADR-002).
 - Every screen follows `docs/ui-rules.md`.
